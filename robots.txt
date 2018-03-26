@@ -1,0 +1,4 @@
+User-agent: "Vegi bot"
+Disallow: /
+User-agent: ZemlyaCrawl
+Disallow: / 
