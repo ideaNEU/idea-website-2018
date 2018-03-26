@@ -1,0 +1,111 @@
+/*--------------------------------------------------------------
+Venture Resources
+--------------------------------------------------------------*/
+/* slug: vr 
+*/
+
+.vr-page{
+}
+
+.vr-page .lead {
+  color:white;
+}
+
+.vr-page .row{
+  padding-bottom: 15px;
+  margin-bottom:50px;
+}
+
+.vr-page .top.row{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.vr-intro-bg {
+  position: relative;
+  background:url("images/photos/resources-bg.jpg") no-repeat;
+  background-size:cover;
+  width:100%;
+}
+
+#vr-sidebar{
+  padding-top: 30px;
+  border-top:1px solid #717375;
+  margin-right: 70px;
+}
+
+.venture-sidebar {
+  margin-right:70px;
+}
+
+#vr-sidebar ul{
+  list-style-type: none;
+  margin: 0px;
+}
+
+#vr-sidebar ul li a{
+  color: #9C9D9C;
+  font-weight:200;
+  font-size: 15px;
+  line-height:30px;
+}
+
+#vr-sidebar ul li a:hover{
+  color:#F47632;
+  text-decoration: none;
+}
+
+#vr-sidebar ul li a:active, #vr-sidebar ul li a.active{
+  color:#F47632;
+  text-decoration: none;
+}
+
+#vr-sidebar ul li .active > a,
+#vr-sidebar ul li .active:hover > a,
+#vr-sidebar ul li .active:focus > a {
+  color: #F47632;
+}
+
+#vr-sidebar.affix {
+  width:192px;
+}
+
+
+#vr-anchor{
+  display: block; 
+  position: relative; 
+  top: -75px; 
+  visibility: hidden;
+}
+
+#vr-banner{
+}
+
+#vr-ccc{
+  padding-top: 50px;
+  padding-bottom: 0px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+#vr-ccc p {
+  margin-bottom:0px;
+  margin-top:10px;
+}
+
+#vr-arrow{
+  border-top: 50px solid #144159;
+  top:50px;
+}
+
+.section-arrow{
+  width: 0; 
+  height: 0; 
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 50px solid #f00;
+  position: relative;
+  left: 50%;
+  top: 70px;
+  margin-left: -60px;
+}

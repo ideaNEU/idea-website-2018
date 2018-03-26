@@ -1,0 +1,150 @@
+diff --git a/content-team_faculty_staff.php b/content-team_faculty_staff.php
+new file mode 100644
+index 0000000..ceddcc9
+--- /dev/null
++++ b/content-team_faculty_staff.php
+@@ -0,0 +1,22 @@
++<?php
++/**
++ * The template part for displaying a Management Member thumbnail on the archive page
++ *
++ * Learn more: http://codex.wordpress.org/Template_Hierarchy
++ *
++ * @package Scout-Base
++ */
++?>
++				<!-- This one whole team member thumbnail that appears on the archive page -->
++				<!-- This code is generated multiple times by wordpress -->
++<div class="team-member col-xs-6 col-sm-6 col-md-3 col-lg-3">
++	<a href="<?php the_permalink() ?>">
++	<img id="team-thumb" src="<?php the_field('mgmt_profile_pic'); ?>" class="img-responsive">		
++	<figure class="faculty-cap-bot">
++		<figcaption>
++			<div class="team-name"><?php the_title(); ?><br /></div>
++			<div class="team-name"><?php the_field('position'); ?></div>
++		</figcaption>
++	</figure>
++	</a>
++</div>
+\ No newline at end of file
+diff --git a/content-team_mgmt.php b/content-team_mgmt.php
+index 0db893a..68f7e0d 100644
+--- a/content-team_mgmt.php
++++ b/content-team_mgmt.php
+@@ -7,7 +7,7 @@
+  * @package Scout-Base
+  */
+ ?>
+-				<!-- This one whole team member thumbnail that appears on the archive page -->
++				<!-- This one whole faculty / staff thumbnail that appears on the archive page -->
+ 				<!-- This code is generated multiple times by wordpress -->
+ <div class="team-member col-xs-6 col-sm-6 col-md-3 col-lg-3">
+ 	<a href="<?php the_permalink() ?>">
+diff --git a/style.css b/style.css
+index 6c03614..59a9519 100644
+--- a/style.css
++++ b/style.css
+@@ -1803,6 +1803,11 @@ a.filterbtn.current {
+ 	width:100%;
+ } 
+ 
++.faculty-cap-bot{
++	border:1px solid #ddd;
++	width:100%;
++}
++
+ 
+ 
+ figure {
+@@ -3971,3 +3976,16 @@ background-color: #FFFFFF;
+ 		height:50%;
+ 	}
+ }
++
++@media only screen and (max-width: 360px) {
++
++	.venture-thumb{
++		height: 150px;
++	}
++
++
++@media only screen and (max-width: 320px) {
++
++	.venture-thumb{
++		height: 130px;
++	}
+diff --git a/taxonomy-team_type-faculty-staff.php b/taxonomy-team_type-faculty-staff.php
+new file mode 100644
+index 0000000..e80a97d
+--- /dev/null
++++ b/taxonomy-team_type-faculty-staff.php
+@@ -0,0 +1,69 @@
++
++<?php
++/**
++ * The template for displaying archive page of Advisors
++ *
++ * Learn more: http://codex.wordpress.org/Template_Hierarchy
++ *
++ * @package Scout-Base
++ */
++
++get_header(); ?>
++
++<section id="primary" class="content-area">
++	<main id="main" class="site-main" role="main">
++
++		<?php if ( have_posts() ) : ?>
++
++		<section id="tag-banner" class="tag-banner advisors-bg">
++			<div class="container banner-text-container">
++				<div class="row">
++					<div id="text-container-bg"></div>
++					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
++						<h1>Advisory Board</h1>
++						<p>Members of the Advisory board have made both financial and time commitments to IDEA. Through volunteering their expertise, they help guide IDE
++						A to improve its services for ventures, network, and long-term mission. These individuals are experts in their respective industries and have a vested 
++						interest in seeing IDEA and the ventures in the program succeed.</p>
++					</div>
++				</div>
++			</div>
++	</section>
++
++
++		<!-- Main body of page -->
++	<section id="mgmt-body-section">
++		<div class="container white">
++			<div class="row">
++
++				<?php /* Start the Loop */ ?>
++				<?php while ( have_posts() ) : the_post(); ?>
++
++			<?php get_template_part( 'content', 'team_faculty_staff' ); ?> <!-- See content-tem_mgmt.php -->
++
++			<?php endwhile; ?>
++
++		</div>
++	</div>
++</section>
++
++
++
++	<!-- 
++	************** Dan Gregory, always killin' it. **************
++	<img src="<?php bloginfo('url'); ?>/wp-content/themes/idea_theme/images/photos/dangregory.jpg" class="img-responsive" />
++	-->
++
++
++
++	<?php scout_base_paging_nav(); ?>
++
++<?php else : ?>
++
++	<?php get_template_part( 'content', 'none' ); ?>
++
++<?php endif; ?>
++
++</main><!-- #main -->
++</section><!-- #primary -->
++
++<?php get_footer(); ?>

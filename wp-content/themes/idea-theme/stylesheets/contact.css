@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+Contact Us
+--------------------------------------------------------------*/
+/* Slug: contact */
+
+
+#contact-banner{
+  background-image:url("../images/patterns/liteblue-pw_pattern_@2X.png");
+  background-repeat: repeat-x;
+  height:auto;
+}
+
+#contact-form {
+    margin: 5em 0 5em 0;
+}
+
+#contact-address{
+  position: relative;
+  width: 100%;
+  padding: 5em 0 5em 0;
+} 
+
+#contact-startVenture{
+    margin: 5em 0 5em 0;
+}
+
+#contact-startVenture p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.25em;
+  margin-bottom: 2em;
+}
+
+#contact-address h2{
+  margin-bottom: 1.5em;
+}
+
+#contact-startVenture__button{
+    font-weight: 900;
+    font-size: 18px;
+    width: auto;
+    text-transform: uppercase;
+    background: #128cb5;
+    color: white;
+    border-radius: 5px;
+    padding: 1em 4em;
+    border: 0;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;      
+}
+
+#contact-startVenture__button:hover{
+  background-color: #85B9C1;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;  
+}
+
+
+/* Hides the simple social media sharing buttons */
+#s-share-buttons{
+  display: none;
+}
+
+@media only screen and (max-width: 320px) {
+
+  #contact-startVenture__button{
+    font-size: 17px;
+  }
+
+}

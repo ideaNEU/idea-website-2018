@@ -1,0 +1,21 @@
+.events .banner {
+  width: 100%;
+  font-family: 'HelveticaNeueLTStd-Lt';
+  font-size: 2em;
+  color: white;
+  background-image:url("../images/patterns/liteblue-shattered_@2X.png");
+  background-repeat: repeat;
+}
+
+.events #bigText{
+  font-size: 1.5em;
+  margin-bottom: .25em;
+}
+
+.events .banner #bodyText{
+  font-size: .75em;
+}
+
+section.events-calendar{
+	margin: 3em 0;
+}

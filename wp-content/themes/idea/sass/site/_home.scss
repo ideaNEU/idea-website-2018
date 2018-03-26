@@ -1,0 +1,152 @@
+.gray {
+  background-color: $wireframe-gray;
+}
+
+.white {
+
+  background-color: #fff;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  width: 190px;
+  height: 70px;
+  text-align: center;
+  border: none;
+
+  &:hover {
+    background-color: $dark-grey;
+  }
+}
+
+.front-top {
+  position: relative;
+  padding: 56.25% 0 0 0;
+
+  #home-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .carousel {
+    .carousel-caption {
+      top: 50%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      transform: translate(-50%, -50%);
+      h2 {
+        color: #fff;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .carousel-indicators {
+      li {
+        border-radius: $carousel-indicator-height / 2;
+        background-color: transparent;
+        border: 2px solid $orange;
+        &.active {
+          background-color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.front-about {
+  .row {
+    margin-bottom: 30px;
+  }
+
+  .front-about-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.front-impact {
+  background-color: rgba(0, 0, 0, 0.02);
+
+  h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .row {
+    margin-bottom: 30px;
+  }
+
+  .impact-circle {
+    position: relative;
+    margin-top: 50px;
+    display: inline-block;
+    color: $dark-blue;
+
+    img {
+      display: block;
+      margin: 0 auto 10px;
+      opacity: 0.4;
+      max-height: 80px;
+    }
+  }
+}
+
+.front-faq {
+  padding: 0;
+  text-align: center;
+
+  a, a:link, a:visited {
+    padding: 15px 0;
+    background-color: rgba($orange, 0.8);
+    display: block;
+    color: #fff;
+
+    &:hover {
+      background-color: rgba($orange, 0.9);
+    }
+
+    h3 {
+      margin: 0;
+      color: #fff;
+    }
+  }
+}
+
+.front-get-involved {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.get-involved-button-row {
+  margin-top: 100px;
+}
+
+.get-involved-btn {
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 15px
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.4rem;
+  }
+}

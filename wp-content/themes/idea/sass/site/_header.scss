@@ -1,0 +1,28 @@
+.site-header {
+  .navbar {
+    background: #fff;
+    border-bottom: 1px solid $dark-grey;
+
+    .navbar-brand {
+      margin-top: 5px;
+    }
+
+    .nav-logo {
+      height: 50px;
+    }
+
+    a {
+      &:link, &:visited {
+        color: $navbar-color;
+      }
+
+      &:hover {
+        color: $orange;
+      }
+
+      &:active {
+        color: $navbar-active-color;
+      }
+    }
+  }
+}

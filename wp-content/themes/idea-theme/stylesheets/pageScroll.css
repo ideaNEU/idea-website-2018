@@ -1,0 +1,51 @@
+/* from http://www.jqueryscript.net/animation/jQuery-Plugin-For-Vertical-Fullpage-Scrolling-Effect-pageScroll.html */
+
+body {
+    margin: 0;
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+html,
+body,
+.wrapper,
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.slide.active {
+    display: block;
+}
+
+.page-pagination > a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ec7623;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.page-pagination > a.active {
+    background: #ec7623;
+}

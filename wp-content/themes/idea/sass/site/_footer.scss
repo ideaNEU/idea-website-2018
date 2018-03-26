@@ -1,0 +1,86 @@
+
+.site-footer{
+  background-color: #114058;
+  padding: 50px 0 5px;
+  color: white;
+}
+
+.site-footer h2 {
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-size: 26px;
+  color: #fff;
+}
+
+.site-footer a.underlined {
+  text-decoration: underline;
+}
+
+.site-footer a, 
+.site-footer a:link, 
+.site-footer a:visited {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  color: #6bb4e4;
+}
+
+.site-footer p.h2-margin {
+  margin-top: 31px;
+}
+
+.site-footer p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.site-footer-bottom-row {
+  margin-top: 50px;
+}
+
+.footer-get-involved {
+  margin-top:20px;
+}
+
+.footer-get-involved p {
+  margin-bottom:15px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-social-media{
+  padding:0px;
+  height:10px;
+}
+
+.footer-social-media-seperator {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 2px;
+  background: #fff;
+  margin: 0 3px;
+}
+
+.site-footer .footer-social-media-icon,
+.site-footer .footer-social-media-icon:visited,
+.site-footer .footer-social-media-icon:link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 12px;
+  background: #fff;
+  color: #114058;
+  text-align: center;
+}
+
+.site-footer .footer-social-media-icon:hover {
+  background: #6bb4e4;
+}

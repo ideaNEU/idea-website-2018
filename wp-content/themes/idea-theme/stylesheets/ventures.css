@@ -1,0 +1,392 @@
+
+/*--------------------------------------------------------------
+Ventures
+--------------------------------------------------------------*/
+/* slug: venture  */
+
+.venture .banner {
+  width: 100%;
+  font-family: 'HelveticaNeueLTStd-Lt';
+  font-size: 2em;
+  color: white;
+  background-image:url("../images/patterns/liteorange-shattered_@2X.png");
+  background-repeat: repeat;
+}
+
+.venture .banner #bodyText{
+  font-size: .75em;
+}
+
+.venture #bigText{
+  font-size: 1.5em;
+  margin-bottom: .25em;
+}
+
+/* For some reason putting '.venture .filterBar' as the selector doesn't work, is the selector incorrect?*/
+.filterBar{
+  margin-top: 100px;
+  padding-right:15px;
+  font-family: 'HelveticaNeueLTStd-Lt';
+}
+
+.filterBar .filterType{
+  margin-bottom: 5em;
+}
+
+.filterBar .filterType h5{
+  font-family: 'HelveticaNeueLTStd-Lt';
+  font-size: 1.25em;
+  color: black;
+  float: left;
+}
+
+.filterBar ul{
+  list-style: none !important;
+}
+
+.filterBar li{
+  font-size: 1.25em;
+  line-height: 1.1;
+  float: left;
+  margin-left: 1em;
+}
+
+#filter-container{
+  border-bottom: thin solid #ddd;
+  padding-bottom: 20px;
+}
+
+/*styling for the filter button link*/
+a.filterBtn {
+  color: #6D6E71 !important;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+
+a.filterBtn:hover{
+  color: #E77924 !important;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+
+a.current {
+  color: #E77924 !important;
+}
+
+.single-venture{
+  margin-bottom: 30px;
+  -moz-box-shadow: 0px 0px 7px #DCDADA; /* FF3.5+ */
+  -webkit-box-shadow: 0px 0px 7px #DCDADA; /* Saf3.0+, Chrome */
+  box-shadow: 0px 0px 7px #DCDADA; /* Opera 10.5, IE9, Chrome 10+ */
+  min-height: 260px;
+}
+
+.box{
+  position:relative;
+  overflow:hidden;
+}
+
+.box .overbox {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  z-index: 100;
+  width:100%;
+  height:100%;
+  padding: 30% 8% 20% 8%;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease;
+  opacity: 0;
+}
+
+.box:hover .overbox { opacity: 1; }
+
+.single-venture img{
+    border: none;
+}
+
+.single-venture .title{
+  font-family: 'HelveticaNeueLTStd-Lt';
+  font-size: 1.75em;
+  line-height: 1em;
+  color: black;
+  margin-bottom: .5em;
+}
+
+.single-venture .website{
+  font-size: 1.25em;
+}
+
+#icon-gap-funded{
+  height: 1em;
+  width: auto;
+}
+
+#icon-prototype-funded{
+  height: 1em;
+  width: auto;
+  margin-left: 2px;
+}
+
+.funded-badge{
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  margin: 10px;
+}
+
+#shift-right{
+  left: 60px;
+}
+
+.stats{
+  margin-top: 6em;
+}
+
+.stats #active-ventures{
+  font-family: 'HelveticaNeueLTStd-Lt';
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.stats h2{
+  margin-bottom: .5em;
+}
+
+#active-ventures #number{
+  font-family: 'HelveticaNeueLTStd-Lt';
+  color: #E77924;
+  line-height: 1.5em;
+}
+
+.stats .stage-gate-numbers{
+  font-size: 7em;
+  text-align: center;
+  padding: 70px 0 70px 0;
+  color: #F2AD7A;
+}
+
+.stage-gate-numbers span{
+    padding: 25px 25px 0 25px;
+    margin: 0 5px 0 5px;
+    border: thin solid #ddd;
+}
+
+#ready-number, #set-number, #go-number{
+  opacity: 0;
+}
+
+.stage-gate-name{
+  font-family: 'HelveticaNeueLTStd-Lt';
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: .2em;
+}
+
+.pitch-name{
+  font-family: 'HelveticaNeueLTStd-Lt';
+  text-align: center;
+  color: #888;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.row#history-stats{
+  margin-top: 2em;
+}
+
+#history-stats #header{
+  font-family: 'HelveticaNeueLTStd-Lt';
+  font-size: 1.8em;
+  text-align: center;
+  margin:1em 0 .5em 0;
+  line-height: 1.2;
+}
+
+#history-stats .stat-container{
+  font-family: 'HelveticaNeueLTStd-Lt';
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.stat-wrapper{
+  margin: 0 auto;
+}
+
+.stat-container .topText{
+  padding-top: 1em;
+}
+
+.stat-number__wrapper{
+
+}
+
+.stat-container .stat-number{
+  padding: .7em 0 .5em 0;
+}
+
+.stat-number, #million{
+  font-family: 'HelveticaNeueLTStd-Bd';
+  font-size: 2em;
+  color: #63B7CB;
+}
+
+#million{
+  position: absolute;
+  transform: translate(75%, -234%);
+  -webkit-transform: translate(75%, -234%);
+}
+
+.stat-container#concepts{
+    margin: 0 auto;
+    height: 205px;
+    width: 213px;
+    background: url('../images/icons/icon-concepts.png');
+    background-image: url('../images/icons/icon-concepts.svg'), none;
+    background-repeat: no-repeat;
+}
+
+.stat-container#launched{
+    margin: 0 27%;
+    height: 205px;
+    width: 213px;
+    background: url('../images/icons/icon-launched.png');
+    background-image: url('../images/icons/icon-launched.svg'), none;
+    background-repeat: no-repeat;
+}
+
+.stat-container#funding{
+    height: 285px;
+    background: url('../images/icons/icon-funding.png');
+    background-image: url('../images/icons/icon-funding.svg'), none;
+    background-repeat: no-repeat;
+    background-size: 100% 225px;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Controls how isotope reshuffles */
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+
+/*==========  Breakpoints  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .stat-container#launched{
+    margin: 0 auto;
+  }
+  .stats .stage-gate-numbers{
+    font-size: 6em;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .box .overbox{
+    opacity: 1;
+  }
+  .single-venture .title{
+    font-size: 1.5em;
+  }
+  .single-venture .website{
+  font-size: 1.15em;
+  }
+  .box .overbox {
+    padding: 20% 8% 20% 8%;
+  }
+}
+
+@media (max-width : 560px) {
+  .single-venture{
+     min-height: auto;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .single-venture .title{
+    font-size: 1.2em;
+  }
+    .funded-badge {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px 5px;
+  }
+  #shift-right {
+    left: 30px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 375px) {
+      .filterBar ul{
+      list-style: none !important;
+      display: inline-block;
+      float: left;
+    }
+      .filterBar ul#sector-filter{
+      margin-left: 30px;
+    }
+      .filterBar ul#funding-filter{
+      margin-left: 18px;
+    }
+      .filterBar li {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+      .filterBar .filterType {
+      margin-bottom: 5.5em;
+    }
+      .stat-container#funding {
+      height: 216px;
+      background-size: 100% 217px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px){
+    .stat-container#funding {
+    width: auto;
+  }
+}
+

@@ -1,0 +1,166 @@
+/* Wufoo Form Restyling */
+
+.wufoo {
+  font-family:'HelveticaNeueLTStd-Lt';
+}
+
+#header .wufoo .info h2 {
+  font-size:28px !important;
+  text-transform:uppercase !important;
+  margin-bottom:10px !important;
+  font-family: 'HelveticaNeueLTStd-Th', sans-serif !important;
+  font-weight:100 !important;
+  color:#231F20 !important;
+}
+
+.wufoo .info div {
+  font-size:19px !important;
+  font-weight:100 !important;
+  margin-bottom: 1.5em !important;
+  color: #9B9B9B !important;
+  font-weight:100 !important;
+  font-family:'HelveticaNeueLTStd-Lt', sans-serif !important;
+}
+
+.wufoo li.focused {
+  background-color: transparent !important;
+}
+
+.wufoo li.focused div input {
+  background-color:#FCDDC7 !important;
+  outline:0 !important;
+}
+
+.wufoo input.text {
+  border-radius: 4px !important;
+  border-color: #e9e9e9 !important;
+  margin-bottom: 2px !important;
+  height: 2.3em !important;
+  width:85% !important;
+  font-family:'HelveticaNeueLTStd-Lt', sans-serif !important;
+  font-weight: 100 !important;
+  font-size: 100% !important;
+  color: #231f20 !important;
+  padding-left: 5px !important;
+  padding-right: 10px !important;
+}
+
+.wufoo li span label, .wufoo li.focused span label, .wufoo li.focused div label, .wufoo li div label, form li div label var {
+  font-family: 'HelveticaNeueLTStd-Lt' !important;
+  color: #9b9b9b !important;
+  font-size:11px !important;
+}
+
+.wufoo textarea.textarea {
+  color: #231f20;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.wufoo li div, .wufoo li.focused div {
+  font-family: 'HelveticaNeueLTStd-Lt' !important;
+}
+
+.wufoo label.desc, .wufoo legend.desc, .wufoo li.focused label.desc, .wufoo li.focused legend.desc {
+  font-size:15px !important;
+  font-weight:100 !important;
+  margin-bottom: 0.2em !important;
+  color: #9B9B9B !important;
+  font-weight:100 !important;
+  font-family:'HelveticaNeueLTStd-Lt', sans-serif !important;
+  margin-top:0.7em !important;
+}
+
+.wufoo label.choice, .wufoo li span label, .wufoo li.focused span label {
+  font-size:13px !important;
+  font-weight:100 !important;
+  color: #231f20 !important;
+  font-weight:100 !important;
+  font-family:'HelveticaNeueLTStd-Lt', sans-serif !important;
+}
+
+input.checkbox {
+  width:16px !important;
+  height:16px !important;
+}
+
+.safari .wufoo input.file {
+  font-size: 11px !important;
+  font-weight: 100 !important;
+  font-family: 'HelveticaNeueLTStd-Roman' !important;
+  color: #777 !important;
+  height:40px !important;
+}
+
+form li span {
+  margin:0 1em 0 0 !important;
+}
+
+form span.req {
+  color:#E77924 !important !important;
+}
+
+span.symbol {
+  line-height:230% !important;
+  font-family: 'HelveticaNeueLTStd-Roman' !important;
+  color:#9b9b9b !important;
+}
+
+form  .instruct {
+  top:36px !important;
+  margin:0 0 0 27px !important;
+}
+
+form li.complex div span.left, form li.complex div span.right {
+  width:47%;
+}
+
+.wufoo .instruct small {
+  font-size: 11px !important;
+  font-weight: 100 !important;
+  font-family: 'HelveticaNeueLTStd-Roman' !important;
+  color: #777 !important;
+}
+
+.wufoo select.select {
+  color: #231f20 !important;
+  height:2.3em !important;
+}
+
+.wufoo select.select:focus {
+  outline:0 !important;
+}
+
+.notranslate div input[type="button"], .buttons div input[type="submit"] {
+  width:160px !important;
+}
+
+.wufoo input[type="button"], .wufoo input[type="submit"] {
+  font-weight:900 !important;
+  font-size:13px !important;
+  width:210px !important;
+  text-transform:uppercase !important;
+  background:#128cb5 !important;
+  color:white !important;
+  border-radius: 6px !important;
+  padding: 10px 16px !important;
+  border:0 !important;
+  cursor:pointer;
+}
+
+.wufoo input[type="button"]:hover, .wufoo input[type="submit"]:hover {
+  background:#85B9C1 !important;
+}
+
+#errorMsg b {
+  background-color:none;
+  padding:2px;
+}
+
+.error {
+  border:none;
+}
+
+.error label.desc {
+  font-weight:normal;
+}

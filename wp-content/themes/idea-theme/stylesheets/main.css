@@ -1,0 +1,517 @@
+/*--------------------------------------------------------------
+Main Styles
+--------------------------------------------------------------*/
+/*
+INDEX:
+1 - HEADER
+2 - NAVIGATION
+3 - FOOTER
+4 - GENERIC STYLES
+5 - UTILITY CLASSES
+*/
+
+
+/*--------------------------------------------------------------
+1 HEADER
+--------------------------------------------------------------*/
+.site-header{
+}
+
+.header-wrapper{
+  overflow: hidden;
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+}
+
+.site-header img{
+  float:left;
+}
+
+/*--------------------------------------------------------------
+3 FOOTER
+--------------------------------------------------------------*/
+
+.site-footer{
+  background-color: #114058;
+  padding: 50px 0 5px;
+  font-family: 'HelveticaNeueLTStd-Bd';
+  font-weight: 800;
+}
+
+.site-footer h2 {
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+
+.site-footer h2 a {
+  font-family: 'HelveticaNeueLTStd-Bd';
+}
+
+.site-footer a.underlined {
+  text-decoration: underline;
+}
+
+.site-footer a, .site-footer a:link, .site-footer a:visited {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  color: #6bb4e4;
+}
+
+.site-footer p.h2-margin {
+  margin-top: 31px;
+}
+
+.site-footer p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: white;
+  font-weight: 800;
+}
+
+.site-footer-bottom-row {
+  margin-top: 50px;
+}
+
+.footer-social-media{
+  padding:0px;
+  margin-bottom:40px;
+  height:10px;
+}
+
+.footer-social-media-seperator {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 2px;
+  background: #fff;
+  margin: 0 3px;
+}
+
+.site-footer .footer-social-media-icon,
+.site-footer .footer-social-media-icon:visited,
+.site-footer .footer-social-media-icon:link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  padding-top: 3px;
+  border-radius: 12px;
+  background: #fff;
+  color: #114058;
+  text-align: center;
+}
+
+.site-footer .footer-social-media-icon:hover {
+  background: #6bb4e4;
+}
+
+.footer-scout p{
+  font-size: 16px;
+  text-align: right;
+  padding: 12px 12px 0 0;
+  margin: 0;
+}
+
+.footer-scout a:link, .footer-scout a:visited, .footer-scout a {
+  color: #6bb4e4;
+}
+
+.footer-scout a:hover {
+  color: #e97824;
+}
+
+.cta-button {
+  background-color: #128cb5;
+  box-shadow: none;
+  color: white;
+  text-shadow: none;
+  width: 100%;
+  margin-bottom:20px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+
+.cta-button a {
+  color: #ffffff;
+  font-weight: 800;
+  font-family:'HelveticaNeueLTStd-Bd';
+}
+
+button span {
+  vertical-align: -webkit-baseline-middle;
+  line-height: 0;
+}
+
+.modal{
+  top: 200px;
+}
+
+.modal-iframe{
+  width: 100%;
+  height: 500px;
+}
+
+.modal-content{
+  height: 600px;
+}
+
+.modal-header{
+  border-bottom: none;
+}
+
+
+/*--------------------------------------------------------------
+4 GENERIC STYLES
+--------------------------------------------------------------*/
+.banner{
+  height: auto;
+  padding: 2em 0;
+}
+
+button, button:focus {
+  outline:none !important;
+}
+
+input[type="button"], input[type="submit"], .btn {
+  font-weight:900;
+  font-size:13px;
+  width: auto;
+  text-transform:uppercase;
+  background:#128cb5;
+  color:white;
+  border-radius: 5px;
+  padding: 1em 3em;
+  border:0;
+}
+
+.btn:hover {
+  background:#85B9C1;
+  color:white;
+}
+
+.btn:focus {
+  color:white;
+}
+
+.btn:focus {
+}
+
+.orange-btn{
+  background-color: #E77924;
+  color: white;
+  box-shadow: none;
+}
+
+.orange-btn button:hover{
+  background-color: #E77924;
+  color: white;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.white-btn{
+  background-color: white;
+  color: #F9AD78;
+  box-shadow: none;
+}
+
+.white-btn:hover{
+  background-color: white;
+  color: #F9AD78;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* Effects all the image placeholders */
+.thumbnail{
+  margin-bottom: 0px;
+  border-radius:0;
+}
+
+.text-banner{
+  width: 100%;
+  font-family: 'HelveticaNeueLTStd-Lt';
+  font-size: 2em;
+  color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+/* Use this for the thin Banners with just a title */
+.title-banner{
+  width: 100%;
+  font-size:38px;
+  font-family: 'HelveticaNeueLTStd-Th';
+
+}
+
+.title-banner h1{
+  color: white;
+}
+
+/* Use this for the Banner with the tag and description, like the Venture Resources page */
+.tag-banner{
+  width: 100%;
+  background-color: #144159;
+  /*height: 400px;*/
+  font-family: 'HelveticaNeueLTStd-Lt';
+  color: white;
+  height:350px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.vr-intro-bg {
+  padding-top:105px;
+  padding-bottom:105px;
+  height:350px;
+}
+
+.tag-banner h1{
+  color: #E77924;
+  font-family:'HelveticaNeueLTStd-Lt';
+  padding-top: 20px;
+  font-size:36px;
+  font-weight:100;
+  margin-bottom:10px;
+}
+
+.tag-banner p{
+  color:  #6D6E71 ;
+  font-family:'HelveticaNeueLTStd-Th';
+  font-size: 19px;
+  font-weight:200;
+  line-height:24px;
+}
+#about-banner{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  background:url("images/photos/about-bg.jpg") no-repeat;
+  background-size:cover;
+  width:100%;
+}
+
+.banner-text-container{
+  position: relative;
+  z-index: 10;
+  width: 50%;
+  margin-left: 0 !important;
+  padding-right: 40px !important;
+  padding-left: 8%;
+}
+
+.container-text {
+  padding-left:14%;
+}
+
+#text-container-bg{
+  /* position: absolute;
+  background-color: rgba(255,255,255, 0.8);
+  opacity: 50;
+  height: 230px;
+  margin-left: -400px;
+  width: 1000px; */
+}
+
+.banner-headline {
+  font-size:36px;
+  font-family:'HelveticaNeueLTStd-Lt';
+  line-height:44px;
+  color:#D9F0F5;
+  font-weight:100;
+}
+
+
+/*--------------------------------------------------------------
+5 UTILITY CLASSES
+--------------------------------------------------------------*/
+.fixed {
+  position:fixed; top:0; left:0;
+}
+
+.section-pad{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.img-responsive{
+  width: 100%;
+}
+
+.jumbotron {
+  padding:0 !important;
+}
+
+/* Top margin for main content */
+.top {
+  margin-top:75px;
+}
+
+/* Margins between new blocks of content */
+.block-margin {
+  margin:75px 0px;
+}
+
+/* Lead or introductory paragraph text */
+.lead {
+  font-size:19px;
+  font-weight:100;
+}
+
+.last {
+  margin-bottom:75px;
+}
+
+.vr-page .lead.last {
+  margin-bottom:0px;
+}
+
+.centered {
+  text-align:center;
+}
+
+/* Centers a div in a column */
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+/* Just a small square to help indicate elements in testing */
+.indicator{
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+
+.no-pad{
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.no-col-pad{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+/* IDEA COLORS: */
+.dark-blue{
+  background-color: #144159;
+}
+
+.medium-blue{
+  background-color: #128cb5;
+}
+
+.light-blue{
+  background-color: #85B9C1;
+}
+
+.dark-gray-black{
+  background-color: #231F20;
+}
+
+.medium-gray{
+  background-color: rgba(120, 120, 120, 1);
+}
+
+.light-gray{
+  background-color: #e9e9e9;
+}
+
+.orange{
+  background-color: #E77924;
+}
+
+.light-orange{
+  background-color: #F9AD78;
+}
+
+.white{
+  color: #FFFFFF;
+}
+
+.black-text{
+  color: black;
+}
+
+.dark-blue-text{
+  color: #144159;
+}
+
+.medium-blue-text{
+  color: #128cb5;
+}
+
+.light-blue-text{
+  color: #85B9C1;
+}
+
+.dark-gray-black-text{
+  color: #231F20;
+}
+
+.medium-gray-text{
+  color: rgba(120, 120, 120, 1);
+}
+
+.light-gray-text{
+  color: #e9e9e9;
+}
+
+.orange-text{
+  color: #E77924;
+}
+
+.light-orange-text{
+  color: #F9AD78;
+}
+
+.white-text{
+  color: #FFFFFF;
+}
+
+
+
+/* PATTERNS: */
+
+.light-blue-shattered {
+  background-image: url("../images/patterns/liteblue-shattered_@2X.png");
+  background-repeat: repeat-x;
+}
+
+.light-orange-shattered {
+  background-image: url("../images/patterns/liteorange-shattered_@2X.png");
+  background-repeat: repeat-x;
+}
+
+
+/* 404 Syling */
+
+#search-form-container{
+  margin: 1em 0 2em 0;
+}
+
+.error-404 h2{
+  margin-bottom: 0;
+}
+
+.error-404 .cat-item{
+  font-family: 'HelveticaNeueLTStd-Lt';
+}

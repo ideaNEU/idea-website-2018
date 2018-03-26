@@ -1,0 +1,435 @@
+/*--------------------------------------------------------------
+Team
+--------------------------------------------------------------*/
+/* Slug: team */
+#team_grid {
+  margin-top: 50px;
+}
+
+.team__banner {
+  font-family: 'HelveticaNeueLTStd-Lt';
+  color: white;
+  background-image:url("../images/patterns/liteblue-home_pattern.png");
+  background-repeat: repeat;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 3em 0;
+}
+
+.team__banner__container{
+  width: 58.3333%;
+  margin: 0 auto;
+}
+
+.team__row{
+  float: none;
+  padding: 1em 0;
+  vertical-align: middle;
+}
+
+.nofloat {
+  float: none;
+}
+
+.team__banner__bigtext{
+  font-size: 2.5em;
+  margin-bottom: .25em;
+  color: white;
+}
+
+.team__banner__text{
+  font-size: 1.75em;
+  line-height: 1.25em;
+  color: white;
+  margin-bottom: 0;
+}
+
+.team__circle__button{
+  outline: 0;
+  cursor: pointer;
+}
+
+.team__circle {
+  position: relative;
+  background-color: transparent;
+  color: rgb(208,210,211);
+  border-radius: 50%;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  vertical-align: middle;
+  padding: 50%;
+  border: 6px solid rgb(208,210,211);
+  font-family:'HelveticaNeueLTStd-Bd';
+  line-height: 1.25em;
+  font-size: 1.25em; 
+  outline: 0;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; 
+}
+
+.team__circle:hover{
+  border-color: rgb(23,139,181);
+  color: rgb(235,118,35);
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; 
+}
+
+.team__circle--active{
+  border-color: rgb(23,139,181);
+  color: rgb(235,118,35);
+  outline: 0;
+}
+
+.team__circle p{
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0 auto;
+  position: absolute;
+  margin-right: -50%;
+ -ms-transform: translate(-50%, -50%);  
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.team__circle--active{
+  border-color: rgb(23,139,181);
+}
+
+.team__circle__wrapper{
+  width: 22%;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 0 6px;
+}
+
+.team__circle__container{
+  padding: 4em 0 2.9em 0;
+  margin: 0 auto;
+}
+
+.team__info__container{
+  margin: 0 auto;
+  min-height: 85px;
+}
+
+.team__info__text{
+  color: rgb(208,210,211);
+}
+
+.coaches__text, .management__text, .advisoryBoard__text, .facultyStaff__text{
+  color: #414142;
+  font-family: 'HelveticaNeueLTStd-Lt';
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.coaches__text::before{
+  content: 'IDEA Coaches are students and young alumni who are passionate about supporting early-stage startups. They work one-on-one with ventures by connecting them with the necessary resources as they move through the stage gates.';
+}
+
+.management__text::before{
+  content: 'The student-led Management Team is responsible for running IDEA’s program. We support our ventures and coaches by hosting events, managing resources and promoting IDEA within the Northeastern and Boston startup community.';
+}
+
+.advisoryBoard__text::before{
+  content: 'The Advisory Board provides generous time and financial commitments to support IDEA’s program. They offer insight and expertise to continuously improve on our service to ventures.';
+}
+
+.facultyStaff__text::before{
+  content: 'IDEA is supported by faculty and staff from the Northeastern University Center for Entrepreneurship Education, who provide guidance, assistance, and engagement with Northeastern’s entrepreneurial ecosystem.';
+}
+
+.team__caption{
+  border: 1px solid rgb(208,210,211);
+  text-indent: .15em;
+  padding: .35em .35em;
+  font-family: 'HelveticaNeueLTStd-Lt';
+  margin-right: 0;
+  margin-left: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+  transition:         all 0.3s ease;
+}
+
+.team__name{
+  text-decoration: none;
+  color: #231F20;
+  font-size: 15px;
+  height: 50%;
+  padding-left: 1px;
+  padding-right: 1px;
+  cursor: default;
+}
+
+.team__name a:hover{
+  color: #93C4CC;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+}
+
+.team__position{
+  text-decoration: none;
+  font-size: 13px;
+  padding-left: 0;
+  color: rgb(23,139,181);
+}
+
+.team__links{
+  padding-right: 0;
+}
+
+.team__img{
+  height: 20px;
+  width: 20px;
+  vertical-align: top;
+}
+
+.email_icons, .linkedin_icons{
+  float: right;
+  margin-left: 5px;
+  margin-top: -2px;
+}
+
+.email_icons a:active, .linkedin_icons a:active{
+  outline: 0;
+}
+
+.team-container{
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.team__top{
+  margin-top: 25px;
+}
+
+.team-name{
+  text-decoration: none;
+  color: #231F20;
+}
+
+.team-name a:hover{
+  color: #93C4CC;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+}
+
+.team-member{
+  display: block;
+  margin-bottom: 30px;
+  min-height: 260px;
+}
+
+.team-thumb{
+  width: 100%;
+}
+
+.team-member:hover .team__caption{
+  opacity: 1;
+  background: #F9ad78;
+  border-top: 1px solid #f9ad78;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+}
+
+.team-member:hover .team__name,
+.team-member:hover .team__links a,
+.team-member:hover .team__position { 
+  color: white; 
+}
+
+@media only screen and (max-width: 1200px) {
+
+ .team__circle p{
+    font-size: 1.5vw;
+  }
+
+  .coaches__text, .management__text, .advisoryBoard__text, .facultyStaff__text{
+    min-height: 110px;
+  }
+  .team-member{
+    min-height: 340px;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+  .team__circle p{
+    font-size: 2vw;
+  }
+  .coaches__text, .management__text, .advisoryBoard__text, .facultyStaff__text{
+    min-height: 110px;
+  }
+  .team-member{
+    min-height: 345px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .coaches__text, .management__text, .advisoryBoard__text, .facultyStaff__text{
+  font-size: 1em;
+  line-height: 1.3em;
+  min-height: 120px;
+}
+  .team__circle p{
+    font-size: 2.5vw;
+  }
+
+  .team__circle__container{
+      padding: 1.5em 0;
+  }
+
+  .team__info__container{ 
+  min-height: 100px;
+  }  
+
+  .team__top{
+    margin-top: 5px;
+  }
+
+  .team-member{
+    min-height: 360px;
+  }
+
+}
+
+@media only screen and (max-width: 520px) {
+
+  .coaches__text, .management__text, .advisoryBoard__text, .facultyStaff__text{
+  font-size: 1em;
+  line-height: 1.3em;
+  min-height: 120px;
+}
+
+  .team__circle p{
+    font-size: 3.25vw;
+  }
+
+  .team__circle__container{
+    padding: 1.5em 0;
+}
+
+  .team__circle__wrapper{
+    width: 43%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .team__top{
+    margin-top: 5px;
+  }
+
+  .team__name{
+    font-size: 3vw;
+    padding: 0px 0px;
+  }
+
+  .team__position{
+    font-size: 2.75vw;
+    width: 100%;
+    padding: 0px 0px;
+  }
+
+  .team__links{
+    width: 100%;
+  }
+
+  .team__img{
+    height: 20px;
+    width: 20px;
+  }
+  
+  .team-member{
+    min-height: 200px;
+  }
+
+  .team-member .team__caption{
+  opacity: 1;
+  background: #F9ad78;
+  border-top: 1px solid #f9ad78;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+}
+
+  .team-member .team__name,
+  .team-member .team__links a,
+  .team-member .team__position { 
+    color: white; 
+  }
+
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+
+  .coaches__text, .management__text, .advisoryBoard__text, .facultyStaff__text{
+  font-size: .8em;
+  line-height: 1.1em;
+  min-height: 140px;
+}
+
+  .team__circle p{
+    font-size: 3.75vw;
+  }
+
+  .team__circle__container{
+    padding: 1.5em 0;
+}
+
+  .team__circle__wrapper{
+    width: 43%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .team__top{
+    margin-top: 5px;
+  }
+
+  .team__caption{
+    padding: .05em .05em;
+    text-indent: .1em;
+  }
+
+  .team__name{
+    font-size: 3vw;
+    padding: 0px 0px;
+  }
+
+  .team__position{
+    font-size: 2.75vw;
+    width: 100%;
+    padding: 0px 0px;
+  }
+
+  .team__links{
+    width: 100%;
+  }
+
+  .team__img{
+    height: 20px;
+    width: 20px;
+  }
+
+  .team-member{
+    min-height: 170px;
+  }
+}

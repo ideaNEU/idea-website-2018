@@ -1,0 +1,125 @@
+/*--------------------------------------------------------------
+## Typography
+--------------------------------------------------------------*/
+@import "typography";
+
+/*--------------------------------------------------------------
+## Layouts
+--------------------------------------------------------------*/
+@import "layout/content-sidebar";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "comments";
+
+/*--------------------------------------------------------------
+## Posts and Pages
+--------------------------------------------------------------*/
+@import "posts-and-pages";
+
+/*--------------------------------------------------------------
+## Widgets
+--------------------------------------------------------------*/
+@import "widgets";
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@import "header";
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+@import "footer";
+
+/*--------------------------------------------------------------
+## Home Page
+--------------------------------------------------------------*/
+@import "home";
+
+/*--------------------------------------------------------------
+
+## faq Page
+--------------------------------------------------------------*/
+@import "faq";
+
+/*--------------------------------------------------------------
+## Contact Page
+--------------------------------------------------------------*/
+@import "contact";
+
+.partner-block {
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.partner-logo {
+  max-width: 100%;
+  max-height: 120px;
+}
+
+.team-photo-wrapper {
+  height: 160px;
+}
+
+.team-photo {
+  max-width: 100%;
+  max-height: 160px;
+}
+
+.site-content {
+	word-break: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark-blue;
+}
+
+button {
+  width: auto;
+  height: auto;
+}
+
+.btn-success {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.detail-header-wrapper {
+  background: $orange;
+  padding: 20px 15px;
+  margin-bottom: 15px;
+  @include media-breakpoint-up(sm) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+.detail-header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.big-link {
+  font-size: 26px;
+}
+
+.faq-container {
+  @include media-breakpoint-up(md) {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
